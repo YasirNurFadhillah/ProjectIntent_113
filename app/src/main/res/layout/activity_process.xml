@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF7678A8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Pemrograman Mobile Praktek"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="HardcodedText,MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/id_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:text="Nim       :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama    :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_nim"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Nilai       :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_nama"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Keterangan   :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_nilai"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/out_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:text="NIM"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/id_nim"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/out_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/id_nama"
+        app:layout_constraintTop_toBottomOf="@id/id_nim"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/out_nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Nilai"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/id_nilai"
+        app:layout_constraintTop_toBottomOf="@id/id_nama"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/out_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Keterangan"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/id_keterangan"
+        app:layout_constraintTop_toBottomOf="@id/id_nilai"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btn_kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Kembali"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="46dp"
+        app:layout_constraintTop_toBottomOf="@id/out_keterangan"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+
+        android:alpha=".14"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="42dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

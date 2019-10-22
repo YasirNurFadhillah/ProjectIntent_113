@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7678A8"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <ImageView
+            android:id="@+id/logo_uty"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingRight="50dp"
+            app:srcCompat="@mipmap/logo"
+            tools:srcCompat="@mipmap/logo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="20dp"
+            android:textAppearance="?android:attr/textAppearance"
+            android:text="Pemrograman Mobile Praktek"
+            android:textColor="#020202"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/in_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#000000"
+            android:hint="Nim"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/in_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#000000"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            android:paddingTop="20dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/in_nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#020202"
+            android:ems="10"
+            android:hint="Nilai"
+            android:inputType="number"
+            android:paddingTop="20dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="20dp"
+            android:text="Process"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/wm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:ems="10"
+            android:hint="Yasir Nur Fadhillah 5170411113"
+            android:inputType="textPersonName"
+            android:paddingTop="180dp"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
